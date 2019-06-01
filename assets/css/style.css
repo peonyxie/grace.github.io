@@ -1,0 +1,137 @@
+
+.navbar{
+	height:30%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: flex-start;
+	font-family: 'VT323', arial, serif;
+	font-size:30px;
+	font-color: white;
+	z-index: 1000;
+}
+
+.nav{
+	z-index: 999;
+}
+
+#heart {
+	position: relative;
+    display: block;
+    height: 70px;
+    width: 100px;
+    top:250px;
+    left: 690px;
+    transform: translateY(0px);
+    z-index: 999;
+}
+
+
+#heart:hover {
+    animation:jumping 0.6s cubic-bezier(0.42, 0, 0.7, 0.5) infinite alternate;
+}
+#left:hover {
+    animation:jumping 0.6s cubic-bezier(0.42, 0, 0.7, 0.5) infinite alternate;
+}
+#right:hover {
+    animation:jumping 0.6s cubic-bezier(0.42, 0, 0.7, 0.5) infinite alternate;
+}
+
+@keyframes jumping {
+   0% { transform: translateY(0px);}
+   50% { transform: translateY(20px);}
+   100% { transform: translateY(0px);}
+}
+
+
+#left{
+	position: absolute;
+    display: block;
+    height: 200px;
+    width: 150px;
+    top:200px;
+    bottom: 300px;
+    left: 500px;
+    z-index: 999;
+}
+
+#right{
+	position: absolute;
+    display: block;
+    height: 200px;
+    width: 250px;
+    top:200px;
+    bottom: 300px;
+    left: 900px;
+    z-index: 999;
+}
+
+
+
+#star1{
+	position: absolute;
+    display: block;
+    height: 100px;
+    width: 100px;
+    top:0px;
+    bottom: 100px;
+    left: 400px;
+    z-index: 999;
+    transform: translateY(0px);
+    transform: translateX(0px);
+    animation: falling 1.8s infinite;
+}
+
+#star2{
+	position: relative;
+    display: block;
+    height: 120px;
+    width: 120px;
+    top:150px;
+    bottom: 100px;
+    left: 1200px;
+    z-index: 999;
+	transform: translateY(0px);
+    transform: translateX(0px);
+    animation: falling 1.9s infinite;
+}
+
+#star3{
+	position: relative;
+    display: block;
+    height: 90px;
+    width: 90px;
+    top:70px;
+    bottom: 100px;
+    left: 700px;
+    z-index: 999; 
+    transform: translateY(0px);
+    transform: translateX(0px);
+     animation: falling 2.3s infinite;
+}
+
+#star4{
+	position: relative;
+    display: block;
+    height: 100px;
+    width: 100px;
+    top:200px;
+    left: 1000px;
+    z-index: 999; 
+    transform: translateY(0px);
+    transform: translateX(0px);
+     animation: falling 1.4s infinite;
+}
+
+@keyframes falling {
+    0% {
+        transform: translatex(0px) translatey(0px);
+        opacity: 0.8;
+    }
+    100% {
+        transform: translatex(-300px) translatey(300px);
+        opacity: 0.3;
+    }
+}
+
